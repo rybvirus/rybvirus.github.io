@@ -1,10 +1,53 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        #textContainer {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        #myButton {
+            width: 200px;
+            height: 200px;
+            border: none;
+            background: url('rybka.gif') center center/cover;
+            cursor: pointer;
+        }
+    </style>
+    <title>rybka</title>
 </head>
 <body>
-    <h1>hello</h1>
+
+<div id="textContainer">
+    <h1>
+        guten morgen przyjacielu
+    </h1>
+    
+    <p>
+        To jest ryb. kliknij w ryba.
+    </p>
+</div>
+
+<div id="buttonContainer">
+    <button id="myButton"></button>
+</div>
+
+<script>
+    document.getElementById('myButton').addEventListener('click', function() {
+        window.location.href = 'main.html';
+    });
+</script>
+
 </body>
 </html>
